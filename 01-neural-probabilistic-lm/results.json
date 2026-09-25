@@ -1,0 +1,28 @@
+{
+  "vocab_size": 27,
+  "n_params": 11897,
+  "train_loss": 2.1171071529388428,
+  "dev_loss": 2.1414217948913574,
+  "generated_names": [
+    "ann",
+    "ckara",
+    "yustrax",
+    "marian",
+    "azhirahasey",
+    "amanar",
+    "paree",
+    "zen",
+    "kel",
+    "lando",
+    "mia",
+    "yasen",
+    "mettye",
+    "tayah",
+    "mar",
+    "tay",
+    "zanna",
+    "mikizo",
+    "nak",
+    "rogenossis"
+  ]
+}
