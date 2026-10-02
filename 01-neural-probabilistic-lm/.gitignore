@@ -1,0 +1,14 @@
+# Entornos y caché
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.log
+
+# Scratch de construcción del notebook (no son parte del proyecto)
+_nb_tools.py
+_paso4_markdown.txt
+_stage*.py
+
+# El PDF del paper no se redistribuye: ver el link en el README
+bengio2003_paper.pdf

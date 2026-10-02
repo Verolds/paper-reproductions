@@ -1,28 +1,88 @@
 {
-  "vocab_size": 27,
-  "n_params": 11897,
-  "train_loss": 2.1171071529388428,
-  "dev_loss": 2.1414217948913574,
-  "generated_names": [
-    "ann",
-    "ckara",
-    "yustrax",
-    "marian",
-    "azhirahasey",
-    "amanar",
-    "paree",
-    "zen",
-    "kel",
-    "lando",
-    "mia",
-    "yasen",
-    "mettye",
-    "tayah",
-    "mar",
-    "tay",
-    "zanna",
-    "mikizo",
-    "nak",
-    "rogenossis"
+  "paper": "Bengio et al. 2003 - A Neural Probabilistic Language Model",
+  "reproduccion": "nivel de caracteres, 32,033 nombres propios (dataset karpathy/makemore)",
+  "arquitectura": {
+    "vocab_size": 27,
+    "block_size (n-1)": 3,
+    "n_embd (m)": 10,
+    "n_hidden (h)": 200,
+    "n_params": 11897
+  },
+  "mlp": {
+    "train": 2.1168,
+    "dev": 2.1412,
+    "test": 2.1429,
+    "perplexity_train": 8.3,
+    "perplexity_dev": 8.51,
+    "perplexity_test": 8.52
+  },
+  "baselines_ngrama": {
+    "bigrama": {
+      "train": 2.4542,
+      "dev": 2.4531,
+      "test": 2.458,
+      "alpha": 0.1,
+      "contextos_posibles": 27,
+      "contextos_vistos": 27
+    },
+    "trigrama": {
+      "train": 2.1874,
+      "dev": 2.2225,
+      "test": 2.224,
+      "alpha": 0.1,
+      "contextos_posibles": 729,
+      "contextos_vistos": 595
+    },
+    "4-grama": {
+      "train": 1.9187,
+      "dev": 2.1018,
+      "test": 2.1044,
+      "alpha": 0.1,
+      "contextos_posibles": 19683,
+      "contextos_vistos": 5438
+    }
+  },
+  "veredicto": {
+    "mejor_ngrama": "4-grama",
+    "delta_dev_pct": -1.88,
+    "resumen": "el MLP PIERDE por 1.9% contra el 4-grama"
+  },
+  "nombres_generados": [
+    "krita",
+    "elle",
+    "rapon",
+    "dagar",
+    "ever",
+    "mairishaiyah",
+    "branivi",
+    "breigh",
+    "margemin",
+    "wyson",
+    "dion",
+    "mausincelos",
+    "sarmin",
+    "vies",
+    "dar",
+    "krishay",
+    "kadcy",
+    "dot",
+    "don",
+    "makeell"
+  ],
+  "nombres_no_en_dataset": [
+    "krita",
+    "rapon",
+    "dagar",
+    "mairishaiyah",
+    "branivi",
+    "breigh",
+    "margemin",
+    "wyson",
+    "mausincelos",
+    "sarmin",
+    "vies",
+    "dar",
+    "kadcy",
+    "makeell"
   ]
 }
